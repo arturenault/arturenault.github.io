@@ -1,0 +1,15 @@
+name: "tutu"
+description: "i'm trying to program"
+
+author: "Artur Upton Renault"
+
+url: "http://arturenault.github.io"
+baseurl: ""
+
+markdown: rdiscount
+permalink: :year/:month/:title.html
+pygments: true
+
+# Google Analytics
+ga_domain: arturenault.github.io
+ga_tracking_id:
