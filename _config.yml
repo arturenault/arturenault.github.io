@@ -7,6 +7,7 @@ url: "errati.co"
 baseurl: ""
 encoding: utf-8
 
+relative_permalinks: true
 markdown: rdiscount
 permalink: :year/:month/:title.html
 pygments: true
