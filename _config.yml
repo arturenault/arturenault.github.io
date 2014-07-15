@@ -1,10 +1,11 @@
 name: "errático"
-description: "a blog."
+description: "a blog by some dude."
 
 author: "Artur Upton Renault"
 
 url: "errati.co"
 baseurl: ""
+encoding: utf-8
 
 markdown: rdiscount
 permalink: :year/:month/:title.html
