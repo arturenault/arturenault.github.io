@@ -19,7 +19,7 @@ Also, I *am* a computer science major, so this will also serve as a résumé; I'
 
 This blog will be primarily written in English. This isn't because I'm more comfortable writing in English than in Portuguese or Spanish, but because English is more universal. I expect more of my Portuguese- and Spanish-speaking friends to understand English than the other way around. But if I want to write to a specific audience, there might be a few posts in Iberian tongues.
 
-The name, however, is in Portuguese and translates literally to "erratic." I picked it thinking of the definition "not even or regular in pattern or movement," which I think describes me and this blog pretty well. But to be honest, it was on sale on GoDaddy I like how short and clean the URL looks.
+The name, however, is in Portuguese and translates literally to "erratic." I picked it thinking of the definition "not even or regular in pattern or movement," which I think describes me and this blog pretty well. Erraticness is, to an extent, a flaw of mine, but I'm adopting it as a strength. Kind of like less cool version of Batman. But to be honest, it was on sale on GoDaddy I like how short and clean the URL looks.
 
 I'm not doing this to impress anyone or anything, I'm doing it for myself. To flesh out my ideas and put my two cents out there in the world. If you enjoy it, thank you. If not, feel free to offer your criticism, but be constructive.
 
