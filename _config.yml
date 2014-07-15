@@ -14,4 +14,4 @@ pygments: true
 
 # Google Analytics
 ga_domain: errati.co
-ga_tracking_id:
+ga_tracking_id: UA-52878304-1
