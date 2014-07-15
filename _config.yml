@@ -1,9 +1,9 @@
-name: "tutu"
-description: "i'm trying to program"
+name: "errático"
+description: "a blog."
 
 author: "Artur Upton Renault"
 
-url: "http://arturenault.github.io"
+url: "errati.co"
 baseurl: ""
 
 markdown: rdiscount
@@ -11,5 +11,5 @@ permalink: :year/:month/:title.html
 pygments: true
 
 # Google Analytics
-ga_domain: arturenault.github.io
+ga_domain: errati.co
 ga_tracking_id:
