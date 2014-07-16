@@ -11,6 +11,7 @@ License: MIT License http://opensource.org/licenses/MIT
 /* Common
 /*
 /*****************************************************************************/
+/* Variables */
 /* Global Reset */
 * {
   margin: 0;
@@ -22,14 +23,14 @@ html, body {
   height: 100%; }
 
 body {
-  background: #fff;
-  color: #444;
+  background: white;
+  color: #444444;
   font: 20px 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: #333; }
+  color: #333333; }
 
 p {
   margin: 1em 0; }
@@ -47,12 +48,12 @@ ol li {
   list-style-type: decimal; }
 
 a {
-  color: #39f; }
+  color: #3399ff; }
 
 a:hover {
-  color: #444; }
+  color: #444444; }
 
-/*a:visited { color: #31f; }*/
+/*a:visited { color: $visitedlinkblue; }*/
 /*****************************************************************************/
 /*
 /* Site
@@ -61,7 +62,7 @@ a:hover {
 /* Header */
 header {
   width: 100%;
-  background: #fff; }
+  background: white; }
 
 header .h-wrap {
   padding: 40px; }
@@ -74,11 +75,11 @@ header .h-wrap h1.title {
   font-weight: normal; }
 
 header .h-wrap h1.title a {
-  color: #333;
+  color: #333333;
   text-decoration: none; }
 
 header .h-wrap h1.title a:hover {
-  color: #39f; }
+  color: #3399ff; }
 
 header .h-wrap .menu-icon {
   float: right;
@@ -96,7 +97,7 @@ header .h-wrap .menu-icon .lines {
   display: inline-block;
   width: 24px;
   height: 2px;
-  background: #333;
+  background: #333333;
   position: relative;
   -webkit-transition: background .1s .3s ease;
   transition: background .1s .3s ease; }
@@ -242,11 +243,11 @@ footer small {
 /*
 /*****************************************************************************/
 ul.posts {
-  color: #236CC1;
+  color: #236cc1;
   overflow: hidden; }
 
 ul.posts li {
-  border-bottom: 1px solid #4492EC;
+  border-bottom: 1px solid #4492ec;
   display: inline-block;
   width: 100%; }
 
@@ -254,16 +255,16 @@ ul.posts li:last-child {
   border-bottom: none; }
 
 ul.posts li .p-wrap {
-  background: #589FF1;
+  background: #589ff1;
   padding: 50px 40px;
   transition: all .15s ease-in; }
 
 ul.posts li .p-wrap:hover {
-  background: #67AAF7;
+  background: #67aaf7;
   padding-left: 50px; }
 
 ul.posts li .p-wrap:active {
-  background: #569BEA; }
+  background: #569bea; }
 
 ul.posts li .p-wrap:hover::after {
   content: '\2192';
@@ -274,11 +275,11 @@ ul.posts li .p-wrap p {
   margin-bottom: 0; }
 
 ul.posts li .date {
-  color: #2671C8;
+  color: #2671c8;
   padding-right: 20px; }
 
 ul.posts li a {
-  color: #fff;
+  color: white;
   text-decoration: none; }
 
 /*****************************************************************************/
@@ -291,7 +292,7 @@ section#single-wrap {
   max-width: 780px;
   margin: 20px auto;
   font-family: 'Lora', Georgia, serif;
-  background: #fff;
+  background: white;
   z-index: 1; }
 
 section#single-wrap .single-content {
@@ -300,14 +301,14 @@ section#single-wrap .single-content {
 
 section#single-wrap .feat {
   text-align: center;
-  border-bottom: 1px dotted #E0E1E6;
+  border-bottom: 1px dotted #e0e1e6;
   margin: 0 20px 50px; }
 
 section#single-wrap .feat h5.page-date {
   display: inline-block;
   position: relative;
   top: 11px;
-  background: #fff;
+  background: white;
   font-size: 85%;
   text-align: center;
   font-weight: normal;
@@ -321,7 +322,7 @@ section#single-wrap .feat a.popup {
   display: inline-block;
   position: relative;
   top: 15px;
-  background: #fff;
+  background: white;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
@@ -405,7 +406,7 @@ section#single-wrap img {
 #next {
   position: fixed;
   text-decoration: none;
-  background: #fff;
+  background: white;
   border: 1px solid #eee;
   padding: 10px;
   line-height: 1;
@@ -447,7 +448,7 @@ section#single-wrap img {
   font-size: 80%;
   margin: 60px 40px 40px;
   overflow: scroll;
-  color: SlateGrey; }
+  color: slategray; }
 
 .highlight code {
   width: 100%; }
