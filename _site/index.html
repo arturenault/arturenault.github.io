@@ -10,13 +10,23 @@
   <meta http-equiv="content-language" content="en-gb" />
   <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/scss" href="/css/main.css" />
   <link rel="stylesheet" type="text/scss" href="/css/syntax.css" />
   <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=203736436416762&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -34,6 +44,7 @@
         <header>
           <div class="h-wrap">
             <h1 class="title"><a href="/" title="Back Home">errático</a></h1>
+            <img src="/assets/img/selfie.png" id="selfie">
             <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
           </div>
         </header>
@@ -41,6 +52,30 @@
         <main>
           <div id="home">
   <ul class="posts">
+    
+      <li itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="/2014/07/test-post-please-ignore.html" itemprop="url">
+          <div class="p-wrap">
+            <time datetime="2014-07-16T00:00:00-04:00" class="date"
+                itemprop="datePublished">
+              16 Jul 2014
+            </time>
+            <p itemprop="name headline">test post please ignore</p>
+          </div>
+        </a>
+      </li>
+    
+      <li itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="/2014/07/another-test-post-ignore.html" itemprop="url">
+          <div class="p-wrap">
+            <time datetime="2014-07-16T00:00:00-04:00" class="date"
+                itemprop="datePublished">
+              16 Jul 2014
+            </time>
+            <p itemprop="name headline">another test post ignore</p>
+          </div>
+        </a>
+      </li>
     
       <li itemscope itemtype="http://schema.org/BlogPosting">
         <a href="/2014/07/im-starting-a-blog.html" itemprop="url">

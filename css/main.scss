@@ -1,6 +1,5 @@
 ---
 ---
-
 /* 
 Title: Hikari
 Description: : A responsive & simple theme for Jekyll
@@ -17,7 +16,6 @@ License: MIT License http://opensource.org/licenses/MIT
 /*****************************************************************************/
 
 /* Variables */
-
 $white: #fff;
 $graylight: #fafafa;
 $graylighter: #f1f1f1;
@@ -37,6 +35,36 @@ $postactive: #569BEA;
 $postdate: #2671C8;
 $postborder: #E0E1E6;
 
+/* scheme id 3E62dvVw5w0w0 */
+
+$bluelighter: #6996d3;
+$bluelight: #4380d3;
+$blue: #0F4FA8;
+$bluedark: #284C7E;
+$bluedarker: #05316D;
+
+$purplelighter: #986BD6;
+$purplelight: #8144d6;
+$purple: #5110AD;
+
+$greenlighter: #66e276;
+$greenlight: #39e24e;
+$green: #01c619;
+$greendark: #259433;
+$greendarker: #008110;
+
+$orangelighter: #FFCA73;
+$orangelight: #FFb740;
+$orange: #FF9f00;
+
+@font-face {
+    font-family: 'Prociono';
+    src: url('fonts/Prociono-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* Global Reset */
 
 * {
@@ -51,11 +79,12 @@ html, body { width: 100%; height: 100%; }
 body {
   background: $white;
   color: $graydark;
-  font: 20px 'Open Sans', sans-serif;
+  font: 20px 'Lato', sans-serif;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface";
   font-weight: bold;
   color: $graydarker;
 }
@@ -65,9 +94,9 @@ small { font-size: 50%; }
 p, small, blockquote { -webkit-font-smoothing: antialiased; }
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
-a         { color: $linkblue; }
-a:hover   { color: $graydark; }
-/*a:visited { color: $visitedlinkblue; }*/
+a         { color: $green; }
+a:hover   { color: $greendarker; }
+/*a:visited { color: $greendark; }*/
 
 
 /*****************************************************************************/
@@ -80,19 +109,24 @@ a:hover   { color: $graydark; }
 /* Header */
 
 header {
+  overflow: hidden;
   width: 100%;
   background: $white;
+  box-shadow: 0px 0px 0px 15px $white;
 }
 
 header .h-wrap {
+  overflow: hidden;
+  position: relative;
   padding: 40px;
 }
 
 header .h-wrap h1.title {
+  position: relative;
+  z-index: 1;
   display: inline-block;
-  margin: 0;
   padding: 0;
-  font-size: 26px;
+  font-size: 40px;
   font-weight: normal;
 }
 
@@ -102,7 +136,7 @@ header .h-wrap h1.title a {
 }
 
 header .h-wrap h1.title a:hover {
-  color: $linkblue;
+  color: $orange;
 }
 
 header .h-wrap .menu-icon {
@@ -199,6 +233,14 @@ header .h-wrap .close .lines::after {
   margin: 0;
 }
 
+header #selfie {
+  z-index: 0;
+  position: absolute;
+  right: 8%;
+  top: 0px;
+  max-height: 200px;
+}
+
 /* Off-canvas */
 
 #off-canvas {
@@ -282,7 +324,7 @@ footer small { text-transform: uppercase; }
   font-style: normal;
 }
 
-.icon-twitter, .icon-github, .icon-dribbble, .icon-instagram {
+.icon-twitter, .icon-facebook, .icon-github, .icon-googleplue, .icon-tumblr {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -293,18 +335,26 @@ footer small { text-transform: uppercase; }
   -webkit-font-smoothing: antialiased;
 }
 
+
+.icon-github:before {
+  content: "\e600"
+}
+
+.icon-googleplus:before {
+  content: "\e603"
+}
+
+.icon-tumblr:before {
+  content: "\e604"
+}
+
 .icon-twitter:before {
-  content: "\e002";
+  content: "\e601";
 }
-/*.icon-github:before {
-  content: "\e003";
+
+.icon-facebook:before  {
+  content: "\e602";
 }
-.icon-dribbble:before {
-  content: "\e004";
-}
-.icon-instagram:before {
-  content: "\e005";
-}*/
 
 
 /*****************************************************************************/
@@ -314,15 +364,15 @@ footer small { text-transform: uppercase; }
 /*****************************************************************************/
 
 
-ul.posts { color: $posts; overflow: hidden; }
-ul.posts li { border-bottom: 1px solid $postsborder; display: inline-block; width: 100%; }
+ul.posts { color: $white; overflow: hidden; }
+ul.posts li { border-bottom: 1px solid $bluelighter; display: inline-block; width: 100%; }
 ul.posts li:last-child { border-bottom: none; }
-ul.posts li .p-wrap { background: $post; padding: 50px 40px; transition: all .15s ease-in; }
-ul.posts li .p-wrap:hover { background: $posthover; padding-left: 50px; }
-ul.posts li .p-wrap:active { background: $postactive; }
+ul.posts li .p-wrap { background: $bluelight; padding: 50px 40px; transition: all .15s ease-in; }
+ul.posts li .p-wrap:hover { color: $orangelight; background: $bluelighter; padding-left: 50px; }
+ul.posts li .p-wrap:active { background: $bluelighter; }
 ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
 ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
-ul.posts li .date { color: $postdate; padding-right: 20px; }
+ul.posts li .date { color: $bluedarker; padding-right: 20px; }
 ul.posts li a { color: $white; text-decoration: none; }
 
 
@@ -332,18 +382,26 @@ ul.posts li a { color: $white; text-decoration: none; }
 /*
 /*****************************************************************************/
 
+section#single-wrap .text-wrap {
+  display: inline-block;
+  background-color: $white;
+  border-left: 3px dotted $bluelight;
+  border-right: 3px dotted $bluelight;
+  width: 99.25%;
+}
 
 section#single-wrap {
+  border-radius: 40px;
   width: 100%;
   max-width: 780px;
-  margin: 20px auto;
-  font-family: 'Lora', Georgia, serif;
-  background: $white;
+  margin: 0px auto;
+  font-family: 'Prociono', Georgia, serif;
+  background: $bluelight;
   z-index: 1;
 }
 
 section#single-wrap .single-content {
-  padding: 0 40px;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -357,7 +415,8 @@ section#single-wrap .feat h5.page-date {
   display: inline-block;
   position: relative;
   top: 11px;
-  background: $white;
+  background-color: $bluelight;
+  color: white;
   font-size: 85%;
   text-align: center;
   font-weight: normal;
@@ -373,7 +432,7 @@ section#single-wrap .feat a.popup {
   display: inline-block;
   position: relative;
   top: 15px;
-  background: $white;
+  background: $bluelight;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
@@ -384,10 +443,11 @@ section#single-wrap .feat a.popup {
 
 section#single-wrap h1.page-title {
   font-size: 180%;
+  color: $white;
   line-height: 135%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin: 0 0 60px;
+  margin: 0 0 30px;
   padding: 0 40px;
 }
 
@@ -425,7 +485,7 @@ section#single-wrap p { line-height: 160%; }
 
 section#single-wrap blockquote {
   font-size: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
   border-left: 6px solid #39f;
   padding: 0 34px;
@@ -449,13 +509,13 @@ section#single-wrap img {
 #next {
   position: fixed;
   text-decoration: none;
-  background: $white;
+  background: $orange;
   border: 1px solid #eee;
   padding: 10px;
   line-height: 1;
   border-radius: 25px;
   bottom: 40px;
-  color: #333;
+  color: $white;
 }
 
 #prev { left: 40px; }
@@ -525,7 +585,7 @@ section#single-wrap img {
   position: absolute;
   color: #444;
   margin-top: -42px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: $graymediumlight;
   border: 1px solid #eee;
   padding: 4px 10px; 

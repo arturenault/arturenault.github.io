@@ -12,10 +12,12 @@ layout: default
       </h5>
     </div>
     <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
-    <div itemprop="articleBody">
+    <div class="text-wrap" itemprop="articleBody">
       {{ content }}
     </div>
     <div id="share" class="feat">
+      <a href="http://www.facebook.com/share.php?u={{ site.baseurl }}{{page.url}}&title={{page.title}}" class="popup">  <span class="icon-facebook"></span>
+      </a>
       <a href="http://twitter.com/share" class="popup">
         <span class="icon-twitter"></span>
       </a>
