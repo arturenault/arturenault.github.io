@@ -1,6 +1,8 @@
 ---
 layout: post
 title: I'm Starting a Blog
+image: view.jpg
+imagesource: me
 ---
 
 My name is Artur Upton Renault.

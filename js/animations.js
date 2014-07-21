@@ -5,7 +5,7 @@ $(function() {
 		if (url.substring(url.length - 4) == "next") {
 			$("#slider").show("slide", {easing: "easeInCubic", direction: "right"});
 		} else {
-			$("#slider").show("slide", {easing: "easeInCubic"});
+			$("#slider").show("slide", {easing: "easeInCubic", direction: "left"});
 		}
 		$("a").not(".menu-icon").not("#next").click(function(event){
 			event.preventDefault();

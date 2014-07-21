@@ -26,9 +26,11 @@ License: MIT License http://opensource.org/licenses/MIT
 /* General */
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  min-height: 100%; }
 
 body {
+  min-height: 100%;
   background: white;
   color: #444444;
   font: 20px 'Lato', sans-serif;
@@ -66,6 +68,10 @@ a:hover {
 /* Site
 /*
 /*****************************************************************************/
+#slider {
+  height: 100%;
+  width: 100%; }
+
 /* Header */
 header {
   overflow: hidden;
@@ -181,6 +187,7 @@ header #selfie {
   z-index: 0;
   position: absolute;
   left: 0px;
+  min-height: 100%;
   height: 100%;
   width: 100%;
   webkit-transition: width .35s ease, left .35s ease;
@@ -234,9 +241,20 @@ header #selfie {
   border-radius: 50%; }
 
 /* Footer */
+#not-footer {
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: -80px; }
+
+#not-footer:after {
+  content: "";
+  display: block;
+  height: 80px; }
+
 footer {
-  padding: 40px;
-  text-align: center; }
+  margin: 5px;
+  position: fixed;
+  bottom: 0; }
 
 footer small {
   text-transform: uppercase; }
@@ -324,6 +342,20 @@ ul.posts li a {
 /* Post View
 /*
 /*****************************************************************************/
+.image-wrap {
+  position: absolute;
+  text-align: left;
+  height: 100%; }
+  .image-wrap small {
+    text-transform: uppercase;
+    margin-left: 5px; }
+
+.post-image {
+  margin: 0 auto;
+  margin-left: 5px;
+  height: 100%;
+  display: block; }
+
 section#single-wrap .text-wrap {
   display: inline-block;
   background-color: white;
@@ -332,10 +364,13 @@ section#single-wrap .text-wrap {
   width: 99.25%; }
 
 section#single-wrap {
+  margin: 0px auto;
   border-radius: 40px;
+  position: absolute;
+  right: 10%;
   width: 100%;
   max-width: 780px;
-  margin: 0px auto;
+  margin-bottom: 50px;
   font-family: 'Prociono', Georgia, serif;
   background: #4380d3;
   z-index: 1; }
@@ -580,7 +615,14 @@ section#single-wrap img {
 
   #off-canvas #bio {
     margin: 10%;
-    width: 80%; } }
+    width: 80%; }
+
+  .image-wrap {
+    display: none; }
+
+  #single-wrap {
+    margin: 0 auto;
+    left: 0px; } }
 /* Viewport width < 480px */
 @media only screen and (max-width: 479px) {
   body {
@@ -615,7 +657,8 @@ section#single-wrap img {
     width: 80%; }
 
   section#single-wrap {
-    margin: 0 auto; }
+    margin: 0 auto;
+    left: 0; }
 
   section#single-wrap .single-content {
     padding: 0 20px; }
