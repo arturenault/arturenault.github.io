@@ -23,12 +23,12 @@ layout: default
       </a>
     </div>
     {% if page.next %}
-      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}?next" id="next">
         <span class="nav-title nav-title-next">newer</span> &rarr;
       </a>
     {% endif %}
     {% if page.previous %}
-      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}?prev" id="prev">
         &larr; <span class="nav-title nav-title-prev">older</span>
       </a>
     {% endif %}
