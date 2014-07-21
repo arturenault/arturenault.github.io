@@ -16,6 +16,20 @@
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="{{site.baseurl}}/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/assets/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/assets/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/assets/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/assets/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/assets/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/assets/icons/apple-touch-icon-76x76.png">
+<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/icons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/icons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/icons/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-square70x70logo" content="{{site.baseurl}}/assets/icons/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="{{site.baseurl}}/assets/icons/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="{{site.baseurl}}/assets/icons/mstile-310x150.png">
 </head>
 
 <body>
@@ -32,15 +46,12 @@
         <![endif]-->
 
         <div id="off-canvas">
-          <div id="avatar">
-            <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">
-          </div>
           <div id="bio">
-            <h1>{{ site.author }}.</h1>
-            <p>Here's an <a href="{% post_url 2014-07-15-im-starting-a-blog %}">explanation</a>. Check out my <a href="http://github.com/erratico/">Github</a>, <a href="http://www.facebook.com/arturenault/">Facebook</a>, and <a href="http://www.twitter.com/arturenault">Twitter</a> (be warned, I never use Twitter).</p>
+            <h1>by {{ site.author }}.</h1>
+            <p> Here's an <a href="{% post_url 2014-07-15-im-starting-a-blog %}">explanation</a>. Check out my <a href="http://github.com/erratico/">Github</a>, <a href="http://www.facebook.com/arturenault/">Facebook</a>, and <a href="http://www.twitter.com/arturenault">Twitter</a> (be warned, I never use Twitter).</p>
           </div>
         </div>
-
+        <div id="site-wrapper">
         <header>
           <div class="h-wrap">
             <h1 class="title"><a href="/" title="Back Home">{{ site.name }}</a></h1>
@@ -70,6 +81,7 @@
           ga('send', 'pageview');
         </script>
         {% endif %}
+        </div>
 
       </body>
       </html>

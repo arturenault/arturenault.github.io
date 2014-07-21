@@ -3,11 +3,13 @@
 window.onload = function() {
 
     var $menuIcon = document.getElementsByClassName("menu-icon")[0],
-        $offCanva = document.getElementById('off-canvas');
+        $siteWrapper = document.getElementById('site-wrapper'),
+        $offCanvas = document.getElementById('off-canvas');
 
     $menuIcon.addEventListener('click', function() {
         toggleClass($menuIcon, 'close');
-        toggleClass($offCanva, 'toggled');
+        toggleClass($offCanvas, 'toggled');
+        toggleClass($siteWrapper, 'toggled');
         removeClass($menuIcon, 'hover');
     }, false);
 

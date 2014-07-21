@@ -112,7 +112,7 @@ header {
   overflow: hidden;
   width: 100%;
   background: $white;
-  box-shadow: 0px 0px 0px 15px $white;
+  box-shadow: 0px 0px 0px 0px $white;
 }
 
 header .h-wrap {
@@ -243,40 +243,50 @@ header #selfie {
 
 /* Off-canvas */
 
-#off-canvas {
-  position: relative;
-  max-height: 0;
-  overflow: hidden;
-  padding: 0px 40px;
-  background: $graylight;
-  border-bottom: 0px solid $graylighter;
-  -webkit-transition: max-height .35s ease, 
-                      padding-top .35s ease, 
-                      padding-bottom .35s ease, 
-                      border-width .35s ease;
-  transition:         max-height .35s ease, 
-                      padding-top .35s ease, 
-                      padding-bottom .35s ease, 
-                      border-width .35s ease;
+#site-wrapper {
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  webkit-transition: width .35s ease,
+                     left .35s ease;
+  transition:        width .35s ease,
+                     left .35s ease;
+
+  &.toggled { 
+    width: 75%;
+    webkit-transition: width .35s ease,
+                       left .35s ease;
+    transition:        width .35s ease,
+                       left .35s ease;
+  }
 }
 
-#off-canvas.toggled {
-  max-height: 90%;
-  padding: 40px;
-  border-width: 1px;
-  -webkit-transition: max-height .35s ease, 
-                      padding-top .35s ease, 
-                      padding-bottom .35s ease, 
-                      border-width .35s ease;
-  transition:         max-height .35s ease, 
-                      padding-top .35s ease, 
-                      padding-bottom .35s ease, 
-                      border-width .35s ease;
+#off-canvas {
+  position: fixed;
+  z-index: 100;
+  right: -25%;
+  height: 100%;
+  width: 25%;
+  overflow-y: hidden;
+  background: $graylight;
+  border-bottom: 0px solid $graylighter;
+  webkit-transition: right .35s ease;
+  transition:        right .35s ease;
+
+  &.toggled {
+    right: 0;
+    webkit-transition: right .35s ease;
+    transition:        right .35s ease;
+  }
 }
 
 #off-canvas #bio {
-  width: 70%;
-  max-width: 720px;
+  margin: 20%;
+  position: absolute;
+  overflow-y: hidden;
+  width: 200px;
   display: block;
 }
 
@@ -507,6 +517,7 @@ section#single-wrap img {
 
 #prev,
 #next {
+  font-family: "Lato", sans-serif;
   position: fixed;
   text-decoration: none;
   background: $orange;
@@ -628,6 +639,8 @@ section#single-wrap img {
     display: none; 
   }
 
+  #off-canvas #bio { margin: 10%; width: 80%;}
+
 }
 
 /* Viewport width < 480px */
@@ -638,10 +651,14 @@ section#single-wrap img {
   header .h-wrap { padding: 30px 20px; }
   ul.posts li .p-wrap { padding: 20px; }
   ul.posts li .p-wrap:hover { background: #67AAF7; padding-left: 20px; }
-  #off-canvas { padding: 0 20px; }
-  #off-canvas.toggled { padding: 20px; }
-  #off-canvas #bio { width: 100%; }
-  #off-canvas #avatar img { width: 120px; }
+  #site-wrapper.toggled { width: 100%;
+                          left: -300px;
+                          webkit-transiton: left .35s ease; 
+                                 transition: left .35s ease;
+                        }
+  #off-canvas { right: -300px; width: 300px; }
+  #off-canvas.toggled { right: 0px; width: 300px; }
+  #off-canvas #bio { margin: 10% ; width: 80%; }
   section#single-wrap { margin: 0 auto; }
   section#single-wrap .single-content { padding: 0 20px; }
   section#single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }

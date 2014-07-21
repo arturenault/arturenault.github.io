@@ -71,7 +71,7 @@ header {
   overflow: hidden;
   width: 100%;
   background: white;
-  box-shadow: 0px 0px 0px 15px white; }
+  box-shadow: 0px 0px 0px 0px white; }
 
 header .h-wrap {
   overflow: hidden;
@@ -177,26 +177,40 @@ header #selfie {
   max-height: 200px; }
 
 /* Off-canvas */
+#site-wrapper {
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  webkit-transition: width .35s ease, left .35s ease;
+  transition: width .35s ease, left .35s ease; }
+  #site-wrapper.toggled {
+    width: 75%;
+    webkit-transition: width .35s ease, left .35s ease;
+    transition: width .35s ease, left .35s ease; }
+
 #off-canvas {
-  position: relative;
-  max-height: 0;
-  overflow: hidden;
-  padding: 0px 40px;
+  position: fixed;
+  z-index: 100;
+  right: -25%;
+  height: 100%;
+  width: 25%;
+  overflow-y: hidden;
   background: #fafafa;
   border-bottom: 0px solid #f1f1f1;
-  -webkit-transition: max-height .35s ease,  padding-top .35s ease,  padding-bottom .35s ease,  border-width .35s ease;
-  transition: max-height .35s ease,  padding-top .35s ease,  padding-bottom .35s ease,  border-width .35s ease; }
-
-#off-canvas.toggled {
-  max-height: 90%;
-  padding: 40px;
-  border-width: 1px;
-  -webkit-transition: max-height .35s ease,  padding-top .35s ease,  padding-bottom .35s ease,  border-width .35s ease;
-  transition: max-height .35s ease,  padding-top .35s ease,  padding-bottom .35s ease,  border-width .35s ease; }
+  webkit-transition: right .35s ease;
+  transition: right .35s ease; }
+  #off-canvas.toggled {
+    right: 0;
+    webkit-transition: right .35s ease;
+    transition: right .35s ease; }
 
 #off-canvas #bio {
-  width: 70%;
-  max-width: 720px;
+  margin: 20%;
+  position: absolute;
+  overflow-y: hidden;
+  width: 200px;
   display: block; }
 
 #off-canvas #bio h1 {
@@ -437,6 +451,7 @@ section#single-wrap img {
 /* pagination */
 #prev,
 #next {
+  font-family: "Lato", sans-serif;
   position: fixed;
   text-decoration: none;
   background: #ff9f00;
@@ -561,7 +576,11 @@ section#single-wrap img {
   .highlight code.html::before,
   .highlight code.css::before,
   .highlight code.js::before {
-    display: none; } }
+    display: none; }
+
+  #off-canvas #bio {
+    margin: 10%;
+    width: 80%; } }
 /* Viewport width < 480px */
 @media only screen and (max-width: 479px) {
   body {
@@ -577,17 +596,23 @@ section#single-wrap img {
     background: #67AAF7;
     padding-left: 20px; }
 
+  #site-wrapper.toggled {
+    width: 100%;
+    left: -300px;
+    webkit-transiton: left .35s ease;
+    transition: left .35s ease; }
+
   #off-canvas {
-    padding: 0 20px; }
+    right: -300px;
+    width: 300px; }
 
   #off-canvas.toggled {
-    padding: 20px; }
+    right: 0px;
+    width: 300px; }
 
   #off-canvas #bio {
-    width: 100%; }
-
-  #off-canvas #avatar img {
-    width: 120px; }
+    margin: 10%;
+    width: 80%; }
 
   section#single-wrap {
     margin: 0 auto; }
