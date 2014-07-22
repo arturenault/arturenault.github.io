@@ -1,7 +1,6 @@
 $(function() {
 	var url = document.URL;
 	if (!window.mobilecheck()) {
-		$("#slider").css("display", "none");
 		if (url.substring(url.length - 4) == "next") {
 			$("#slider").show("slide", {easing: "easeInCubic", direction: "right"});
 		} else {
