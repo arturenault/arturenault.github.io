@@ -7,7 +7,7 @@ $(function() {
 		} else {
 			$("#slider").show("slide", {easing: "easeInCubic", direction: "left"});
 		}
-		$("a").not(".menu-icon").not("#next").click(function(event){
+		$("a").not(".no-animation").not("#next").click(function(event){
 			event.preventDefault();
 			var href = this.href;
 			$("#slider").hide("slide", {easing: "easeOutCubic", direction: "right"}, function() {

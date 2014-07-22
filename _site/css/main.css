@@ -214,31 +214,22 @@ header #selfie {
     transition: right .35s ease; }
 
 #off-canvas #bio {
-  margin: 20%;
+  margin: 5%;
   position: absolute;
   overflow-y: hidden;
-  width: 200px;
+  width: 90%;
   display: block; }
 
 #off-canvas #bio h1 {
-  font-size: 140%;
+  font-size: 130%;
   margin-top: 0; }
 
-#off-canvas #bio p {
-  font-family: 'Lora', serif;
-  line-height: 160%;
-  font-size: 100%;
+#off-canvas #bio ul {
+  list-style-type: circle;
+  font-family: 'Lato', sans-serif;
+  line-height: 120%;
+  font-size: 80%;
   margin-bottom: 0; }
-
-#off-canvas #avatar {
-  float: right;
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 5px; }
-
-#off-canvas #avatar img {
-  width: 150px;
-  border-radius: 50%; }
 
 /* Footer */
 #not-footer {
@@ -348,11 +339,11 @@ ul.posts li a {
   height: 100%; }
   .image-wrap small {
     text-transform: uppercase;
-    margin-left: 5px; }
+    margin-left: 15px; }
 
 .post-image {
   margin: 0 auto;
-  margin-left: 5px;
+  margin-left: 15px;
   height: 100%;
   display: block; }
 
@@ -367,7 +358,7 @@ section#single-wrap {
   margin: 0px auto;
   border-radius: 40px;
   position: absolute;
-  right: 10%;
+  right: 2.5%;
   width: 100%;
   max-width: 780px;
   margin-bottom: 50px;

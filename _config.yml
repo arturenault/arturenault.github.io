@@ -7,6 +7,13 @@ url: "errati.co"
 baseurl: ""
 encoding: utf-8
 
+email: arturenault@gmail.com
+github: http://www.github.com/arturenault
+facebook: http://www.facebook.com/arturenault
+twitter: http://www.twitter.com/arturenault
+instagram: http://www.instagram.com/arturenault
+linkedin: https://www.linkedin.com/pub/artur-renault/60/66/665
+
 relative_permalinks: true
 markdown: rdiscount
 permalink: :year/:month/:title.html
