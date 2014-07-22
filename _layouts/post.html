@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-<meta property="og:title" content="{{page.title}}" />
-<meta property="og:description" content="{{site.title}}" />
-<meta property="og:image" content="{{page.image}}" />
 <div class="image-wrap">
 <img class="post-image" src="{{site.baseurl}}/assets/img/{{page.image}}">
 <small class="image-source">via {{ page.imagesource }}</small>
@@ -22,9 +19,9 @@ layout: default
       {{ content }}
     </div>
     <div id="share" class="feat">
-      <a href="http://www.facebook.com/share.php?u={{ site.url }}{{page.url}}" class="popup">  <span class="icon-facebook"></span>
+      <a href="http://www.facebook.com/sharer.php?u=http://{{ site.url }}{{page.url}}&t={{page.title}}" class="popup no-animation">  <span class="icon-facebook"></span>
       </a>
-      <a href="http://twitter.com/share" class="popup">
+      <a href="http://twitter.com/share" class="popup no-animation">
         <span class="icon-twitter"></span>
       </a>
     </div>
