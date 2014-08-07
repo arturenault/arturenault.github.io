@@ -122,7 +122,7 @@
 
 /* Literal.String */
 .highlight .na {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Attribute */
 .highlight .nb {
@@ -135,11 +135,11 @@
 
 /* Name.Class */
 .highlight .no {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Constant */
 .highlight .ni {
-  color: purple; }
+  color: #800080; }
 
 /* Name.Entity */
 .highlight .ne {
@@ -157,11 +157,11 @@
 
 /* Name.Namespace */
 .highlight .nt {
-  color: navy; }
+  color: #000080; }
 
 /* Name.Tag */
 .highlight .nv {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable */
 .highlight .ow {
@@ -237,15 +237,15 @@
 
 /* Name.Builtin.Pseudo */
 .highlight .vc {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Class */
 .highlight .vg {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Global */
 .highlight .vi {
-  color: teal; }
+  color: #008080; }
 
 /* Name.Variable.Instance */
 .highlight .il {

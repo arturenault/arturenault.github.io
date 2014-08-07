@@ -17,7 +17,7 @@ linkedin: https://www.linkedin.com/pub/artur-renault/60/66/665
 relative_permalinks: true
 markdown: rdiscount
 permalink: :year/:month/:title.html
-pygments: true
+highlighter: pygments
 
 # Google Analytics
 ga_domain: errati.co
