@@ -95,9 +95,9 @@ small { font-size: 50%; }
 p, small, blockquote { -webkit-font-smoothing: antialiased; }
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
-a         { color: $green; }
-a:hover   { color: $greendarker; }
-/*a:visited { color: $greendark; }*/
+a         { color: $green; text-decoration: none; }
+a:hover   { color: $greenlight; text-decoration: underline;}
+a:visited { color: $greendark; }
 
 
 /*****************************************************************************/
@@ -302,12 +302,14 @@ header #selfie {
   margin-top: 0;
 }
 
-#off-canvas #bio ul {
-  list-style-type: circle;
-  font-family: 'Lato', sans-serif;
-  line-height: 120%;
-  font-size: 80%;
-  margin-bottom: 0;
+#social-media {
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  left: 20%;
+  span {
+    margin: 5px;
+  }
 }
 
 
@@ -325,47 +327,49 @@ header #selfie {
   /* Font-icons */
 
   @font-face {
-    font-family: 'icomoon';
-    src:url('../assets/fonts/icomoon.eot');
-    src:url('../assets/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+  font-family: 'icomoon';
+  src:url('../assets/fonts/icomoon.eot');
+  src:url('../assets/fonts/icomoon.eot') format('embedded-opentype'),
     url('../assets/fonts/icomoon.woff') format('woff'),
     url('../assets/fonts/icomoon.ttf') format('truetype'),
-    url('../assets/fonts/icomoon.svg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
+    url('../assets/fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .icon-twitter, .icon-facebook, .icon-github, .icon-googleplue, .icon-tumblr {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-  }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  .icon-github:before {
-    content: "\e600"
-  }
+.icon-mail:before {
+  content: "\e600";
+}
+.icon-facebook:before {
+  content: "\e601";
+}
+.icon-instagram:before {
+  content: "\e602";
+}
+.icon-twitter:before {
+  content: "\e603";
+}
+.icon-github:before {
+  content: "\e604";
+}
+.icon-linkedin:before {
+  content: "\e605";
+}
 
-  .icon-googleplus:before {
-    content: "\e603"
-  }
-
-  .icon-tumblr:before {
-    content: "\e604"
-  }
-
-  .icon-twitter:before {
-    content: "\e601";
-  }
-
-  .icon-facebook:before  {
-    content: "\e602";
-  }
 
 
   /*****************************************************************************/
