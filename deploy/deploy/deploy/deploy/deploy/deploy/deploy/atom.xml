@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>errático</title>
+  <id>errati.co</id>
+  <link href="errati.co" />
+  <link href="errati.co/atom.xml" rel="self" />
+  <updated>2014-07-21T18:42:52-04:00</updated>
+  <rights>Copyright 2014, Artur Upton Renault</rights>
+  <author>
+    <name>Artur Upton Renault</name>
+  </author>
+  
+    <entry>
+      <title>test post please ignore</title>
+      <link href="errati.co/2014/07/test-post-please-ignore.html" />
+      <summary type="html">
+</summary>
+      <id>errati.co/2014/07/test-post-please-ignore.html</id>
+      <updated>2014-07-16T00:00:00-04:00</updated>
+      <author>
+        <name>Artur Upton Renault</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>another test post ignore</title>
+      <link href="errati.co/2014/07/another-test-post-ignore.html" />
+      <summary type="html">&lt;p&gt;another test post ignore&lt;/p&gt;
+</summary>
+      <id>errati.co/2014/07/another-test-post-ignore.html</id>
+      <updated>2014-07-16T00:00:00-04:00</updated>
+      <author>
+        <name>Artur Upton Renault</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>I&#39;m Starting a Blog</title>
+      <link href="errati.co/2014/07/im-starting-a-blog.html" />
+      <summary type="html">&lt;p&gt;My name is Artur Upton Renault.&lt;/p&gt;
+
+&lt;p&gt;I was born and raised in São Paulo, Brazil, and lived there for 18 years. Now I am in college in New York City, studying Computer Science and Economics.&lt;/p&gt;
+
+&lt;p&gt;And now I&#39;m starting a blog. And like many things I start, it starts with a lot of self-justification.&lt;/p&gt;
+
+&lt;p&gt;The idea for this has been forming in my mind for a long time. I&#39;ve always liked writing, and I&#39;ve had many vehicles for this, including a few student publication and probably most popularly my Facebook page.&lt;/p&gt;
+
+&lt;p&gt;Many people have expressed that they like what I write. So I felt like I shoulmd start spreading it here, where I have more freedom than in a publication, and on a more lightweight, more open platform than Facebook.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, I&#39;m doing this to reach a goal of being more open and confident about my writing and about my opinions. I&#39;ll be writing as honestly as I can here; maybe it&#39;ll a take a while for the good stuff to come out, but this is a process which eventually will turn into something good.&lt;/p&gt;
+
+&lt;p&gt;Also, I &lt;em&gt;am&lt;/em&gt; a computer science major, so this will also serve as a résumé; I&#39;ll have the things I make when I actually create something useful. It&#39;s also why I&#39;m doing this with Jekyll and not with Blogspot, WordPress, tumblr, or the like.&lt;/p&gt;
+
+&lt;p&gt;This blog will be primarily written in English. This isn&#39;t because I&#39;m more comfortable writing in English than in Portuguese or Spanish, but because English is more universal. I expect more of my Portuguese- and Spanish-speaking friends to understand English than the other way around. But if I want to write to a specific audience, there might be a few posts in Iberian tongues.&lt;/p&gt;
+
+&lt;p&gt;The name, however, is in Portuguese and translates literally to &quot;erratic.&quot; I picked it thinking of the definition &quot;not even or regular in pattern or movement,&quot; which I think describes me and this blog pretty well. Erraticness is, to an extent, a flaw of mine, but I&#39;m adopting it as a strength. Kind of like less cool version of Batman. But to be honest, it was on sale on GoDaddy I like how short and clean the URL looks.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not doing this to impress anyone or anything, I&#39;m doing it for myself. To flesh out my ideas and put my two cents out there in the world. If you enjoy it, thank you. If not, feel free to offer your criticism, but be constructive.&lt;/p&gt;
+
+&lt;p&gt;So without further ado, let&#39;s stop the &lt;em&gt;why&lt;/em&gt;s and get on with the &lt;em&gt;what&lt;/em&gt;s. I&#39;ll try to write something every week, but no promises. Think of this what you like, but I hope you enjoy it.&lt;/p&gt;
+</summary>
+      <id>errati.co/2014/07/im-starting-a-blog.html</id>
+      <updated>2014-07-15T00:00:00-04:00</updated>
+      <author>
+        <name>Artur Upton Renault</name>
+      </author>
+    </entry>
+  
+</feed>
