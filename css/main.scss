@@ -459,13 +459,15 @@ section#single-wrap .feat h5.page-date {
 }
 
 section#single-wrap #share {
-  margin: 50px 20px;
+  margin: 30px 20px;
+  margin-top: 5px;
 }
 
 section#single-wrap .feat a.popup {
   display: inline-block;
   position: relative;
   top: 15px;
+  color: $greenlight !important;
   background: $bluelight;
   font-size: 24px;
   text-align: center;
@@ -473,6 +475,10 @@ section#single-wrap .feat a.popup {
   padding: 0 25px;
   transition: all .2s ease;
   -webkit-transition: all .2s ease;
+
+  &:hover {
+    color: $greenlighter;
+  }
 }
 
 section#single-wrap h1.page-title {
