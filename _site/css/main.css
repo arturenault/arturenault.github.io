@@ -583,6 +583,9 @@ section#single-wrap img {
   header .h-wrap .menu-icon {
     margin-top: 2px; }
 
+  #slider {
+    display: block; }
+
   #next,
   #prev {
     position: static; }
