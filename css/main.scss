@@ -722,4 +722,20 @@ section#single-wrap img {
 
   .highlight { padding: 10px 5px; margin: 30px 20px 40px; }
 
+  #social-media {
+    font-size: 300%;
+  }
+}
+
+/* Viewport width <= 360px */
+
+@media only screen and (max-width : 359px) {
+  #off-canvas { right: -200px; width: 200px;}
+  #off-canvas.toggled { right: 0px; width: 200px; }
+
+  #site-wrapper.toggled { width: 100%;
+    left: -200px;
+    webkit-transiton: left .35s ease; 
+    transition: left .35s ease;
+  }
 }
