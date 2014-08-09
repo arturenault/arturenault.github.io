@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wherefore Art?
-image: inside_the_hermitage.jpeg
+image: Inside_the_hermitage.jpeg
 imagesource: <a href="//en.wikipedia.org/wiki/User:Palefire" class="extiw" title="en:User:Palefire">Palefire</a> at <a class="external text" href="http://en.wikipedia.org">en.wikipedia</a>
 ---
 
