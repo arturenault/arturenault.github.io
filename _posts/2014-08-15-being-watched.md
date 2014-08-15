@@ -13,7 +13,7 @@ But the part that freaked me out the most: none of this actually bothers me.
 
 After all, it is something I consented to when I bought the phone and used it each day. I'm fine with it if it means that I can use the GPS for getting around. Most of us agree to this. Which is a change; if you had asked someone in the 80s if they'd be interested in being tracked at all times by a large corporation, they'd probably throw their walkman at you. Nowadays, this is commonplace and it's accepted; it just shows how much we've changed.
 
-Out of curiosity, I went out and tried to see what similar data I can get about myself online. It turns out that [Facebook](https://www.facebook.com/dyi?x=Adnym-sxffb4pwMU) and [Google](https://www.facebook.com/dyi?x=Adnym-sxffb4pwMU) let you download a copy of your data. It's a simple process; you click a button, then a few hours later they send you an e-mail with a download link. The downloads are huge: my Facebook file took up 1.02 GB, and my Google information was split into two files: one containing every e-mail I have (over 7 GB, so I didn't touch it), and one with other Google data, 1.31 GB in size.
+Out of curiosity, I went out and tried to see what similar data I can get about myself online. It turns out that [Facebook](https://www.facebook.com/dyi?x=Adnym-sxffb4pwMU) and [Google](https://www.google.com/settings/takeout) let you download a copy of your data. It's a simple process; you click a button, then a few hours later they send you an e-mail with a download link. The downloads are huge: my Facebook file took up 1.02 GB, and my Google information was split into two files: one containing every e-mail I have (over 7 GB, so I didn't touch it), and one with other Google data, 1.31 GB in size.
 
 The Google one isn't that interesting to me. It's mostly Google+ stuff (which I don't use), so it includes my few photos, posts, etc. The file also has my location history, profile info, and hangout history in JSON, all of which are super annoying to read, and all of the YouTube videos and Drive files I've uploaded.
 
@@ -28,7 +28,7 @@ Facebook is a bit better. First of all, it is all organized into a nice html fil
 - every event I've ever been invited to 
 - my settings  
 - security info - including every time I've changed my password or settings and every IP address that I've ever logged in from
-- ads: essentially, ad topics I'd be interested in in list form, as well as all the ads I've clicked (a whopping 4, all by accident)
+- ads - essentially, ad topics I'd be interested in in list form, as well as all the ads I've clicked (a whopping 4, all by accident)
 
 Some of these are really interesting. The facial recognition info available in my photos is something I couldn't find anywhere else. Perhaps my favorite is the ad info though. The long list includes things I'm actually interested in, like "#Monty Python and the Holy Grail", "#Application software", and "#Stroopwafel." But it also includes things I'm not interested in, such as "#Sewing needle", "#Rain (entertainer)" (no idea who this guy is), and "#Argentina national football team." Finally, there's also a lot of completely random stuff, like "#Communes of France," "#List of awards and nominations received by How I Met Your Mother," and "#Bozo the Clown"&mdash;I wonder if I read these wikipedia articles at some point. The ridiculousness of these topics is part of why I pretty safe being tracked for data.
 
