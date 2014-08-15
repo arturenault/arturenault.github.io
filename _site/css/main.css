@@ -355,8 +355,8 @@ ul.posts li a {
 .post-image {
   margin: 0 auto;
   margin-left: 15px;
-  height: 100%;
-  display: block; }
+  display: block;
+  width: 100%; }
 
 section#single-wrap .text-wrap {
   display: inline-block;
