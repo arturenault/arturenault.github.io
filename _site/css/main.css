@@ -31,7 +31,7 @@ html, body {
 
 body {
   min-height: 100%;
-  background: #ffffff;
+  background: white;
   color: #444444;
   font: 18px 'Lato', sans-serif;
   text-rendering: optimizeLegibility; }
@@ -81,8 +81,8 @@ a:visited {
 header {
   overflow: hidden;
   width: 100%;
-  background: #ffffff;
-  box-shadow: 0px 0px 0px 0px #ffffff; }
+  background: white;
+  box-shadow: 0px 0px 0px 0px white; }
 
 header .h-wrap {
   overflow: hidden;
@@ -299,7 +299,7 @@ footer small {
 /*
 /*****************************************************************************/
 ul.posts {
-  color: #ffffff;
+  color: white;
   overflow: hidden; }
 
 ul.posts li {
@@ -336,7 +336,7 @@ ul.posts li .date {
   padding-right: 20px; }
 
 ul.posts li a {
-  color: #ffffff;
+  color: white;
   text-decoration: none; }
 
 /*****************************************************************************/
@@ -360,7 +360,7 @@ ul.posts li a {
 
 section#single-wrap .text-wrap {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: white;
   border-left: 3px dotted #4380d3;
   border-right: 3px dotted #4380d3;
   width: 99.25%; }
@@ -419,7 +419,7 @@ section#single-wrap .feat a.popup {
 
 section#single-wrap h1.page-title {
   font-size: 180%;
-  color: #ffffff;
+  color: white;
   line-height: 135%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -505,7 +505,7 @@ section#single-wrap img {
   line-height: 1;
   border-radius: 25px;
   bottom: 40px;
-  color: #ffffff; }
+  color: white; }
 
 #prev {
   left: 40px; }
@@ -541,7 +541,7 @@ section#single-wrap img {
   font-size: 80%;
   margin: 60px 40px 40px;
   overflow: scroll;
-  color: #708090; }
+  color: slategray; }
 
 .highlight code {
   width: 100%; }
