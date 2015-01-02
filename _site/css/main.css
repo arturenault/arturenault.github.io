@@ -237,6 +237,13 @@ header #selfie {
   #social-media span {
     margin: 5px; }
 
+#mailchimp {
+  position: absolute;
+  bottom: 30px; }
+  #mailchimp #mce-EMAIL {
+    width: 100%;
+    margin: 0; }
+
 /* Footer */
 #not-footer {
   height: 100%;
